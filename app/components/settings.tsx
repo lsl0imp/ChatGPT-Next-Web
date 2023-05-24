@@ -489,7 +489,7 @@ export function Settings() {
               title={Locale.Settings.AccessCode.Title}
               subTitle={Locale.Settings.AccessCode.SubTitle}
             >
-              <Input
+              <TextInput
                 value={accessStore.accessCode}
                 type="password"
                 placeholder={Locale.Settings.AccessCode.Placeholder}
