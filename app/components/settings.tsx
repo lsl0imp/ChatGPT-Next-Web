@@ -509,11 +509,12 @@ export function Settings() {
             >
               <PasswordInput
                 value={accessStore.token}
-                type="text"
+                type="password"
                 placeholder={Locale.Settings.Token.Placeholder}
                 onChange={(e) => {
                   accessStore.updateToken(e.currentTarget.value);
                 }}
+                style={{ paddingRight: 0 }} // 隐藏图标
               />
             </ListItem>
           ) : null}
