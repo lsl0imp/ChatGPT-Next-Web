@@ -489,9 +489,9 @@ export function Settings() {
               title={Locale.Settings.AccessCode.Title}
               subTitle={Locale.Settings.AccessCode.SubTitle}
             >
-              <TextInput
+              <PasswordInput
                 value={accessStore.accessCode}
-                type="password"
+                type="text"
                 placeholder={Locale.Settings.AccessCode.Placeholder}
                 onChange={(e) => {
                   accessStore.updateCode(e.currentTarget.value);
