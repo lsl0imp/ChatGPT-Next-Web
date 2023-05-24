@@ -496,7 +496,6 @@ export function Settings() {
                 onChange={(e) => {
                   accessStore.updateCode(e.currentTarget.value);
                 }}
-                style={{ paddingRight: 0 }} // 隐藏图标
               />
             </ListItem>
           ) : (
