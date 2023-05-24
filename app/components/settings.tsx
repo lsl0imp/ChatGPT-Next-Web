@@ -491,11 +491,12 @@ export function Settings() {
             >
               <PasswordInput
                 value={accessStore.accessCode}
-                type="text"
+                type="password"
                 placeholder={Locale.Settings.AccessCode.Placeholder}
                 onChange={(e) => {
                   accessStore.updateCode(e.currentTarget.value);
                 }}
+                style={{ paddingRight: 0 }} // 隐藏图标
               />
             </ListItem>
           ) : (
@@ -509,12 +510,11 @@ export function Settings() {
             >
               <PasswordInput
                 value={accessStore.token}
-                type="password"
+                type="text"
                 placeholder={Locale.Settings.Token.Placeholder}
                 onChange={(e) => {
                   accessStore.updateToken(e.currentTarget.value);
                 }}
-                style={{ paddingRight: 0 }} // 隐藏图标
               />
             </ListItem>
           ) : null}
