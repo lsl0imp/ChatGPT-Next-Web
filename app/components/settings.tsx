@@ -491,7 +491,7 @@ export function Settings() {
             >
               <PasswordInput
                 value={accessStore.accessCode}
-                type="password"
+                type="text"
                 placeholder={Locale.Settings.AccessCode.Placeholder}
                 onChange={(e) => {
                   accessStore.updateCode(e.currentTarget.value);
