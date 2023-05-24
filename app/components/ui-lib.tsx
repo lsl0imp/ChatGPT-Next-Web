@@ -227,7 +227,7 @@ export function PasswordInput(props: HTMLProps<HTMLInputElement>) {
   const [visible, setVisible] = useState(false);
 
   function changeVisibility() {
-    setVisible(!visible);
+    setVisible(visible);
   }
 
   return (
